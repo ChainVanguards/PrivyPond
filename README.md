@@ -46,10 +46,6 @@ We developed a platform that allows users to:
 ## Layer-1s (L1s)
 - **Ethereum**: The primary platform for smart contracts and decentralized applications.
 - **Binance Smart Chain (BSC)**: Selected for its low transaction costs and fast processing times, making it ideal for DeFi applications.
-- **Polygon**: A Layer-2 scaling solution that enhances Ethereum's capabilities and speeds up transactions.
-- **Avalanche**: Known for high throughput and low latency, suitable for DeFi operations.
-- **Solana**: Offers fast transaction speeds and low fees, ideal for high-performance applications.
-
 ---
 
 ## Links and References
