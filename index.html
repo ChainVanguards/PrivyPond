@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrivyPond - Exclusive Access Pools</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/logo.png"> <!-- Favicon -->
+    <meta name="description" content="PrivyPond: Join exclusive liquidity pools and unlock potential rewards in decentralized finance.">
+    <meta name="keywords" content="PrivyPond, liquidity pools, decentralized finance, PancakeSwap, Brevis, BSC Testnet">
+    <meta name="author" content="Your Name">
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="left-nav">
+                <ul>
+                    <li><a href="#home" class="active" onclick="showTab('home')">Home</a></li>
+                </ul>
+            </div>
+            <div class="right-nav">
+                <ul>
+                    <li><a href="#info" onclick="showTab('info')">Project Info</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="home" class="tab-content">
+            <h1>Exclusive Access Pools</h1>
+            <p class="intro">Join exclusive liquidity pools and unlock potential rewards!</p>
+            <div class="button-container">
+                <button id="connectButton">Connect MetaMask</button>
+                <button id="registerTradeButton">Register Trade</button>
+                <button id="createPoolButton">Create Exclusive Pool</button>
+                <button id="addLiquidityButton">Add Liquidity</button>
+            </div>
+            <p id="status" class="status-message"></p>
+
+            <!-- Input areas for Register Trade -->
+            <div id="registerTradeInputs" class="input-area" style="display:none;">
+                <h3>Register Trade</h3>
+                <input type="number" id="tradeVolume" placeholder="Enter trade volume in Wei" />
+                <button id="submitTradeButton">Submit Trade</button>
+            </div>
+
+            <!-- Input areas for Add Liquidity -->
+            <div id="addLiquidityInputs" class="input-area" style="display:none;">
+                <h3>Add Liquidity</h3>
+                <input type="text" id="tokenA" placeholder="Enter Token A address" />
+                <input type="text" id="tokenB" placeholder="Enter Token B address" />
+                <input type="number" id="amountA" placeholder="Enter amount of Token A" />
+                <input type="number" id="amountB" placeholder="Enter amount of Token B" />
+                <button id="submitLiquidityButton">Submit Liquidity</button>
+            </div>
+        </div>
+
+        <div id="info" class="tab-content" style="display:none;">
+            <h1>Project Information</h1>
+            <div class="info-section">
+                <p class="info-text">This project leverages the power of smart contracts deployed on the BSC Testnet to manage exclusive access liquidity pools. Users can connect their MetaMask wallets to register trades, create exclusive pools, and add liquidity seamlessly.</p>
+                <p class="info-text">The smart contract interacts with PancakeSwap, allowing for efficient trading and liquidity management, empowering users to participate in decentralized finance effectively.</p>
+                <p class="info-text">Incorporating the Brevis ZK-Coprocessor, we ensure enhanced privacy features, enabling users to verify eligibility for exclusive pools without revealing sensitive transaction data.</p>
+                <p class="info-text">By utilizing the BSC Testnet (<strong>0x9A082015c919AD0E47861e5Db9A1c7070E81A2C7</strong>), we provide a risk-free environment for testing and deploying our innovative smart contracts.</p>
+            </div>
+        </div>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
